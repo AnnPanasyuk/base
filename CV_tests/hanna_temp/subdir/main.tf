@@ -1,4 +1,5 @@
 resource "random_pet" "subdir_referenced" {
+  count = 2
   keepers = {
     time = timestamp()
     custom = var.custom_var
